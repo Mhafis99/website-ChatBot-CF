@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <title>ChatBot Saya</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Bot</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>ChatBot Saya</h1>
-  <p>Website berhasil jalan 🎉</p>
+
+<div class="chat-container">
+    <div class="chat-header">
+    <span>Albert Bot</span>
+    <div>
+        <button id="historyBtn">📜</button>
+        <button id="clearChat">🗑</button>
+    </div>
+</div>
+
+    <div class="history-panel" id="historyPanel">
+    <h3>Riwayat Chat</h3>
+    <div id="historyList"></div>
+    <button onclick="closeHistory()">Tutup</button>
+</div>
+
+
+    <div class="chat-box" id="chatBox">
+        <div class="message bot">
+            Halo 👋 Aku Albert Bot.
+        </div>
+    </div>
+
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ketik pesan..." />
+        <button id="sendBtn">➤</button>
+    </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
